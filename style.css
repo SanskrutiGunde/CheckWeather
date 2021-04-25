@@ -1,0 +1,18 @@
+body {
+  font-family: "Roboto";
+  color: #fff;
+  background-color: #161616;
+}
+header {
+  margin-bottom: 30px;
+}
+.temp {
+  cursor: pointer;
+  color: #006dcc;
+}
+.temp:hover {
+  color: #005096;
+}
+h1 {
+  font-size: 5em;
+}
