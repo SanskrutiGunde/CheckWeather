@@ -39,6 +39,37 @@ function getWeather(lat, lon) {
       $("#temp").text(currentTempCelsius + " " + String.fromCharCode(176));
       $("#tempUnit").text(tempUnit);
       $("#desc").text(result.weather[0].main);
+      IconGen(result.weather[0].main);
     },
   });
+}
+
+function IconGen(desc) {
+  var desc = desc.toLowerCase();
+  switch (desc) {
+    case "drizzle":
+      addIcon(desc);
+      break;
+    case "clouds":
+      addIcon(desc);
+      break;
+    case "rain":
+      addIcon(desc);
+      break;
+    case "snow":
+      addIcon(desc);
+      break;
+    case "clear":
+      addIcon(desc);
+      break;
+    case "thunderstom":
+      addIcon(desc);
+      break;
+    default:
+      $("div.clouds").removeClass("hide");
+  }
+}
+
+function addIcon(desc) {
+  $("div." + desc).removeClass("hide");
 }
