@@ -35,9 +35,21 @@ h1 {
   text-transform: capitalize;
 }
 
-.all-icon {
-  margin-bottom: 20px;
+.w-12 {
+  width: 12% !important;
 }
+.fa-linkedin {
+  color: skyblue;
+}
+.fa-github {
+  color: #161616;
+}
+.fa-envelope {
+  color: rgb(139, 43, 194);
+}
+/* .all-icon {
+  margin-bottom: 20px;
+} */
 
 div.hide {
   display: none;
@@ -49,6 +61,8 @@ div.hide {
   display: inline-block;
   width: 12rem;
   height: 10rem;
+  mix-blend-mode: color-dodge;
+  filter: opacity(0.8);
 }
 
 .cloud {
@@ -165,14 +179,15 @@ div.hide {
   width: 3.75rem;
   height: 3.75rem;
   margin: 0.375rem 0 0 -2rem;
-  background: currentColor;
+  /* background: currentColor; */
+  mix-blend-mode: screen;
 }
 
 .snow {
   top: 30%;
 }
 .flurries {
-  top: 70%;
+  top: 75%;
 }
 
 .rain:after {
