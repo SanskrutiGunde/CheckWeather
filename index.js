@@ -4,6 +4,11 @@ var tempUnit = "C";
 var currentTempCelsius;
 
 $(document).ready(function () {
+  if ("serviceWorker" in navigator) {
+    // register service worker
+    navigator.serviceWorker.register("service-worker.js");
+  }
+
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(function (position) {
       var lat = "lat=" + position.coords.latitude;
