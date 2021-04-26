@@ -20,6 +20,7 @@ $(document).ready(function () {
   }
   //toggle temp unit
   $("#tempUnit").click(function () {
+    playSound();
     var currentTempUnit = $("#tempUnit").text();
     var newTempUnit = currentTempUnit == "C" ? "F" : "C";
     $("#tempUnit").text(newTempUnit);
@@ -77,4 +78,9 @@ function IconGen(desc) {
 
 function addIcon(desc) {
   $("div." + desc).removeClass("hide");
+}
+
+function playSound() {
+  var audio = new Audio("sound/beep.wav");
+  audio.play();
 }
