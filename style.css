@@ -36,13 +36,13 @@ h1 {
 }
 
 .w-12 {
-  width: 12% !important;
+  width: 300px !important;
 }
 .fa-linkedin {
   color: skyblue;
 }
 .fa-github {
-  color: #161616;
+  color: #e2c8c8;
 }
 .fa-envelope {
   color: rgb(139, 43, 194);
