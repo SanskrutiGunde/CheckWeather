@@ -13,9 +13,9 @@
       property="og:url"
       content="https://sanskrutigunde.github.io/CheckWeather/"
     />
-    <meta property="og:title" content="Check Weather" />
+    <meta property="og:title" content="⛅ Check Weather" />
     <meta property="og:description" content="Shows the Local Weather ⛅" />
-    <meta property="og:image" content="" />
+    <meta property="og:image" content="logo/android-chrome-512x512.png" />
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
@@ -23,9 +23,9 @@
       property="twitter:url"
       content="https://sanskrutigunde.github.io/CheckWeather/"
     />
-    <meta property="twitter:title" content="Check Weather" />
+    <meta property="twitter:title" content="⛅ Check Weather" />
     <meta property="twitter:description" content="Shows the Local Weather ⛅" />
-    <meta property="twitter:image" content="" />
+    <meta property="twitter:image" content="logo/android-chrome-512x512.png" />
 
     <meta name="keywords" content="weather, check weather, sanskruti, gunde" />
     <meta name="robots" content="index, follow" />
@@ -74,6 +74,21 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/1.3.2/css/weather-icons.min.css"
     />
     <link rel="stylesheet" href="style.css" />
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-ZFSYGGJLHN"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-ZFSYGGJLHN");
+    </script>
   </head>
   <body>
     <div class="container-fluid">
@@ -137,12 +152,17 @@
           <div class="d-flex justify-content-evenly w-12">
             <a
               href="https://www.linkedin.com/in/sanskrutigunde/"
+              rel="noreferrer noopener"
               target="_blank"
             >
               <i class="fs-3 fab fa-linkedin"></i>
             </a>
 
-            <a href="https://github.com/SanskrutiGunde" target="_blank">
+            <a
+              href="https://github.com/SanskrutiGunde"
+              rel="noreferrer noopener"
+              target="_blank"
+            >
               <i class="fs-3 fab fa-github"></i>
             </a>
             <a href="mailto:sanskruti.gunde@gmail.com"
